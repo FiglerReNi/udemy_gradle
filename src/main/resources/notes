@@ -1,0 +1,12 @@
+Udemy - Spring Framework Master Class - Java Spring the Modern Way
+Section 13 - Gradle
+
+Gradle:
+  - A maven-hez képest itt a pom.xml helyett build.gradle van és settings.gradle file-ok
+  - A maven java specifikus, a gradle platformfüggetlen
+  - Maven-hez kell egy plugin a pom.xml-be és így lehet script file-okban groovy-val programozni dolgokat,
+    a Gradle-ben ez egyszerűbb és támogatja a groovy-t és a kotlint is.
+  - Gradle-el a buildelés sokkal gyorsabb
+      * chachelés miatt
+      * csak azokat a file-okat fordítja amik változtak
+      * ...
