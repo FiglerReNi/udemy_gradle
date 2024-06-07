@@ -3,6 +3,7 @@ Section 13 - Gradle
 
 Gradle:
   - A maven-hez képest itt a pom.xml helyett build.gradle van és settings.gradle file-ok
+  - A maven-el megeggyező projekt struktúrát alkalmaz
   - A maven java specifikus, a gradle platformfüggetlen
   - Maven-hez kell egy plugin a pom.xml-be és így lehet script file-okban groovy-val programozni dolgokat,
     a Gradle-ben ez egyszerűbb és támogatja a groovy-t és a kotlint is.
@@ -10,3 +11,9 @@ Gradle:
       * chachelés miatt
       * csak azokat a file-okat fordítja amik változtak
       * ...
+  - Gredle-ben task-ok vannak a maven lifecycle helyett
+  - A build.gradle plugin-okkal kezdődik:
+      * a java plugin felel a fordításért, segít a tesztelésben és buildelésben is
+      * dependency-management plugin: ennek segítségével tölti le a dependenciákat amiket megadunk a dependencies szekcióban
+      * spring boot plugin: spring boot és gradle együttműködést támogat. Tudjon múködni a dependency management,
+        nem kell megadni például a verziószámokat.
