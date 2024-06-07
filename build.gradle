@@ -28,3 +28,10 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+
+tasks.register('helloWorld'){
+    doLast {
+        System.out.println("Hello World!")
+    }
+}

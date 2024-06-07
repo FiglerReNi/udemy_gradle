@@ -7,13 +7,26 @@ Gradle:
   - A maven java specifikus, a gradle platformfüggetlen
   - Maven-hez kell egy plugin a pom.xml-be és így lehet script file-okban groovy-val programozni dolgokat,
     a Gradle-ben ez egyszerűbb és támogatja a groovy-t és a kotlint is.
+	Például Létrehozhatunk új taskot a build.gradle-be és ebbe akár java kód is írható.
   - Gradle-el a buildelés sokkal gyorsabb
       * chachelés miatt
       * csak azokat a file-okat fordítja amik változtak
       * ...
-  - Gredle-ben task-ok vannak a maven lifecycle helyett
+  - Gradle-ben task-ok vannak a maven lifecycle helyett
   - A build.gradle plugin-okkal kezdődik:
       * a java plugin felel a fordításért, segít a tesztelésben és buildelésben is
       * dependency-management plugin: ennek segítségével tölti le a dependenciákat amiket megadunk a dependencies szekcióban
       * spring boot plugin: spring boot és gradle együttműködést támogat. Tudjon múködni a dependency management,
-        nem kell megadni például a verziószámokat.
+        nem kell megadni például a verziószámokat.	
+  - Gradlet használ a spring framework és a spring boot is. A spring cloud egyelőre mavent használ.
+  
+Maven vagy Gradle
+	Gradle:
+		gyors build
+		programozható build.gradle-ben közvetlenül
+		egyszerűbb a struktúrája mint az xml (kevesebb karakter ugyanaz)
+		ahol számít a build iső, vagy build-kor sok mindent akarunk + taskokat, akkor ez legyen
+	Maven:
+		egyszerűbb build file, minden xml struktúrában
+		pluginnal programozható
+		egyszerűbb projektekhez ahol kb a clean installt használjuk csak, mindenképp ez legyen
